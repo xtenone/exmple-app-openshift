@@ -19,6 +19,9 @@ spec:
     spec:
       containers:
       - image: {{ .Values.image.repository }}
+        env:
+        - name: MY_ENV_VAR
+          value: "something cool"
         name: my-python-app
         {{- with .Values.resources }}
         resources:
