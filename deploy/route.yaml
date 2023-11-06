@@ -3,7 +3,6 @@ kind: Route
 metadata:
   name: my-python-app-deployment
 spec:
-  host: my-python-app-deployment-andres-cidel-dev.apps.sandbox-m3.1530.p1.openshiftapps.com
   port:
     targetPort: 5000
   to:
